@@ -1,19 +1,14 @@
-module Lib
-    ( day1
-    , part1
-    , part2
-    ) where
+module Day1
+  ( solution
+  , part1
+  , part2
+  )
+where
 
-day1 :: IO ()
-day1 = do
-  putStrLn divider
-  putStrLn "day1"
-  interact $ \s -> unlines [divider, "part1: " ++ part1 s, divider, "part2: " ++ part2 s]
-  putStrLn divider
-  return ()
-  where
-    divider = fmap (const '#') [0..50]
+import           Utils
 
+solution :: (Solution, Solution, String)
+solution = (part1, part2, "day1")
 
 part1 :: String -> String
 part1 = (show . processPart1) . map read . lines

@@ -1,17 +1,18 @@
-name:                day1
+name:                aoc2021
 version:             0.1.0.0
-github:              "szlepermarcin/aoc-2021"
+github:              "szlepermarcin/aoc2021"
 license:             BSD3
 author:              "Marcin Szleper"
 maintainer:          "marcin.szleper@gmail.com"
-copyright:           "2021 Marcin Szleper"
+copyright:           "Copyright (c) 2021 Marcin Szleper"
 
 extra-source-files:
 - README.md
 - ChangeLog.md
-- input.txt
+- day1.txt
+- day2.txt
 
-description:         Please see the README on GitHub at <https://github.com/szlepermarcin/aoc-2021/tree/master/day1#readme>
+description:         Please see the README on GitHub at <https://github.com/szlepermarcin/aoc2021#readme>
 
 dependencies:
 - base >= 4.7 && < 5
@@ -20,7 +21,7 @@ library:
   source-dirs: src
 
 executables:
-  day1-exe:
+  aoc2021-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -28,4 +29,4 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - day1
+    - aoc2021
