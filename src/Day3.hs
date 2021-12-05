@@ -8,7 +8,7 @@ where
 import           Data.Monoid
 import           Utils
 
-solution :: (Solution, Solution, String)
+solution :: Solution
 solution = (part1, part2, "day3")
 
 part1 :: String -> String

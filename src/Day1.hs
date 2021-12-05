@@ -7,7 +7,7 @@ where
 
 import           Utils
 
-solution :: (Solution, Solution, String)
+solution :: Solution
 solution = (part1, part2, "day1")
 
 part1 :: String -> String
