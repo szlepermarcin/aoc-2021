@@ -18,8 +18,6 @@ build-type:     Simple
 extra-source-files:
     README.md
     ChangeLog.md
-    day1.txt
-    day2.txt
 
 source-repository head
   type: git

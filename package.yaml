@@ -9,8 +9,6 @@ copyright:           "Copyright (c) 2021 Marcin Szleper"
 extra-source-files:
 - README.md
 - ChangeLog.md
-- day1.txt
-- day2.txt
 
 description:         Please see the README on GitHub at <https://github.com/szlepermarcin/aoc2021#readme>
 

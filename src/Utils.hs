@@ -24,7 +24,7 @@ swap (a, b) = (b, a)
 
 runner :: String -> PartSolution -> PartSolution -> IO ()
 runner day p1 p2 = do
-  input <- readFile $ day ++ ".txt"
+  input <- readFile $ "inputs/" ++ day ++ ".txt"
   putStrLn $ unlines [divider, day, divider, "part1: " ++ p1 input, "part2: " ++ p2 input, divider]
   return ()
   where
