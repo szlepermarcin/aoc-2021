@@ -7,6 +7,7 @@ import qualified Day4  as D4
 import qualified Day5  as D5
 import qualified Day6  as D6
 import qualified Day7  as D7
+import qualified Day8  as D8
 import           Utils (runner)
 
 solutions =
@@ -17,10 +18,11 @@ solutions =
   , D5.solution
   , D6.solution
   , D7.solution
+  , D8.solution
   ]
 
 main :: IO ()
 main = run solutions
   where
-    run [] = return ()
+    run []                   = return ()
     run ((p1, p2, day) : xs) = runner day p1 p2 >> run xs
