@@ -18,7 +18,6 @@ solution = (part1, part2, "day11")
 part1 :: String -> String
 part1 = show . processPart1 . parseInput
 
-
 processPart1 :: Input -> Int
 processPart1 i = fst $ foldr (const (resolve . nextDay)) (0, i) [1..100]
 
@@ -47,9 +46,3 @@ resolve x@(acc, i)
      dx <- [- 1, 0, 1], dy <- [- 1, 0, 1]]
   withFlashing = foldr (\ c i -> set i c 0) i (fst <$> flashing)
   newInput = foldr (\ c i -> modify i c (\v -> if v == 0 then 0 else v + 1)) withFlashing affected
-
-set :: Input -> Coords -> Int -> Input
-set i c v = (\(cc, vv) -> if cc == c then (cc, v) else (cc, vv)) <$> i
-
-modify :: Input -> Coords -> (Int -> Int) -> Input
-modify i c f = (\(cc, vv) -> if cc == c then (cc, f vv) else (cc, vv)) <$> i

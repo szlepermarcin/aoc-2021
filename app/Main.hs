@@ -11,6 +11,7 @@ import qualified Day8  as D8
 import qualified Day9  as D9
 import qualified Day10  as D10
 import qualified Day11  as D11
+import qualified Day12  as D12
 import           Utils (runner)
 
 solutions =
@@ -25,6 +26,7 @@ solutions =
   , D9.solution
   , D10.solution
   , D11.solution
+  , D12.solution
   ]
 
 main :: IO ()

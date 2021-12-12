@@ -29,3 +29,9 @@ runner day p1 p2 = do
   return ()
   where
     divider = fmap (const '#') [0 .. 50]
+
+set :: Eq a => [(a, b)] -> a -> b -> [(a, b)]
+set i c v = (\(cc, vv) -> if cc == c then (cc, v) else (cc, vv)) <$> i
+
+modify :: Eq a => [(a, b)] -> a -> (b -> b) -> [(a, b)]
+modify i c f = (\(cc, vv) -> if cc == c then (cc, f vv) else (cc, vv)) <$> i
