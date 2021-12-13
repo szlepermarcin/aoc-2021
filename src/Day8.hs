@@ -5,8 +5,6 @@ module Day8
   )
 where
 
-import           Data.List
-import           Data.Maybe
 import           Utils
 
 type Digit = String

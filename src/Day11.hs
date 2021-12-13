@@ -5,7 +5,6 @@ module Day11
   )
 where
 
-import           Data.List
 import           Utils
 
 type Coords = (Int, Int)

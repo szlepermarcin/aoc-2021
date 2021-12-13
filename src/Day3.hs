@@ -5,7 +5,6 @@ module Day3
   )
 where
 
-import           Data.Monoid
 import           Utils
 
 solution :: Solution

@@ -5,8 +5,6 @@ module Day4
   )
 where
 
-import           Data.List
-import           Data.Monoid
 import           Utils
 
 solution :: Solution
@@ -34,8 +32,6 @@ boardValue m b = m * getSum (boardValue' 0 b)
     where
     boardValue' acc [] = acc
     boardValue' acc (x:xs) = boardValue' (acc + foldMap (Sum . fst) (filter (not . snd) x)) xs
-
-
 
 
 parseData :: String -> (Game, [Board])

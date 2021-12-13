@@ -6,7 +6,6 @@ module Day5
   )
 where
 
-import           Data.List
 import           Utils
 
 type Point = (Int, Int)

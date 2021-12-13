@@ -6,9 +6,6 @@ module Day12
   )
 where
 
-import           Data.Char
-import           Data.List
-import           Data.Maybe
 import           Utils
 
 type Input = [(String, [String])]

@@ -5,8 +5,6 @@ module Day10
   )
 where
 
-import           Data.List
-import           Data.Maybe
 import           Utils
 
 type Input = [String]

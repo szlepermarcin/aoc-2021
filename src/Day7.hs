@@ -6,7 +6,6 @@ module Day7
 where
 
 import           Utils
-import Data.List
 
 solution :: Solution
 solution = (part1, part2, "day7")

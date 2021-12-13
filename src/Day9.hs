@@ -5,8 +5,6 @@ module Day9
   )
 where
 
-import           Data.Function
-import           Data.List
 import           Utils
 
 type Matrix = [[Int]]
