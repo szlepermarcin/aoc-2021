@@ -1,3 +1,4 @@
+{-# LANGUAGE ViewPatterns #-}
 module Day13
   ( solution
   , part1
@@ -32,16 +33,14 @@ processPart2 (s,f) = unlines ("" : ((\y -> (\x -> if (x,y) `elem` coords then '#
   maxY = maximum $ snd <$> coords
 
 parseInput :: String -> Input
-parseInput s = (parseCoord <$> c, parseFold <$> f)
+parseInput (splitOn "" . lines -> [c,f]) = (parseCoord <$> c, parseFold <$> f)
   where
-  [c, f] = splitOn [] $ lines s
-  parseCoord cc = mkCoord $ splitOn ',' cc
-  mkCoord [x,y] = (read x, read y)
-  mkCoord _     = undefined
-  parseFold ff = mkFold $ splitOn '=' ff
-  mkFold ["fold along y", y] = fh (read y)
-  mkFold ["fold along x", x] = fv (read x)
-  mkFold _                   = id
+  parseCoord (splitOn ',' -> [x,y]) =  (read x, read y)
+  parseCoord _                      = undefined
+  parseFold (splitOn '=' -> ["fold along y", y]) = fh (read y)
+  parseFold (splitOn '=' -> ["fold along x", x]) = fv (read x)
+  parseFold _                                    = id
+parseInput _ = undefined
 
 fv :: Int -> [Coords] -> [Coords]
 fv i v = adjust $ nub $ first (\x -> if x > i then i - (x - i) else x) <$> v
