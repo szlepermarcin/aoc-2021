@@ -13,6 +13,7 @@ import           Data.List
 import           Data.Maybe
 import           Data.Monoid
 
+
 type PartSolution = String -> String
 type Solution = (PartSolution, PartSolution, String)
 

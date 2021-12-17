@@ -6,6 +6,9 @@ import qualified Day11 as D11
 import qualified Day12 as D12
 import qualified Day13 as D13
 import qualified Day14 as D14
+import qualified Day15 as D15
+import qualified Day16 as D16
+import qualified Day17 as D17
 import qualified Day2  as D2
 import qualified Day3  as D3
 import qualified Day4  as D4
@@ -31,6 +34,9 @@ solutions =
   , D12.solution
   , D13.solution
   , D14.solution
+  , D15.solution
+  , D16.solution
+  , D17.solution
   ]
 
 main :: IO ()

@@ -31,6 +31,9 @@ library
       Day12
       Day13
       Day14
+      Day15
+      Day16
+      Day17
       Day2
       Day3
       Day4
@@ -46,6 +49,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers
   default-language: Haskell2010
 
 executable aoc2021-exe
@@ -58,4 +62,5 @@ executable aoc2021-exe
   build-depends:
       aoc2021
     , base >=4.7 && <5
+    , containers
   default-language: Haskell2010
