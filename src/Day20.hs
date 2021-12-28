@@ -27,7 +27,7 @@ processPart1 i@(pattern, matrix) = length $ filter id $ A.elems m
   ((_, m),_) = foldl (\state _ -> nextInput state) (i, '0') [1..2]
 
 part2 :: String -> String
-part2 = const "NONE"
+part2 = show . processPart2 . parseInput
 
 processPart2 :: Input -> Int
 processPart2 i@(pattern, matrix) = length $ filter id $ A.elems m
