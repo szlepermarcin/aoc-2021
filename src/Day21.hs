@@ -7,7 +7,6 @@ module Day21
 where
 
 import qualified Data.Map    as M
-import           Debug.Trace
 import           Utils
 
 data Game = Game

@@ -40,6 +40,7 @@ library
       Day20
       Day21
       Day22
+      Day23
       Day3
       Day4
       Day5
@@ -53,9 +54,11 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      array
+    , base >=4.7 && <5
     , containers
     , hashable
+    , mtl
     , pqueue
     , unordered-containers
   default-language: Haskell2010
@@ -66,12 +69,14 @@ executable aoc2021-exe
       Paths_aoc2021
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -rtsopts "-with-rtsopts=-N -M4G"
   build-depends:
       aoc2021
+    , array
     , base >=4.7 && <5
     , containers
     , hashable
+    , mtl
     , pqueue
     , unordered-containers
   default-language: Haskell2010

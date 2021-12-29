@@ -4,10 +4,12 @@ module Utils
   , module Control.Monad
   , module Data.Bifunctor
   , module Data.Char
+  , module Data.Functor
   , module Data.Hashable
   , module Data.List
   , module Data.Maybe
   , module Data.Monoid
+  , module Debug.Trace 
   , module GHC.Generics
   ) where
 
@@ -15,10 +17,12 @@ import           Control.Applicative
 import           Control.Monad
 import           Data.Bifunctor
 import           Data.Char
+import           Data.Functor
 import           Data.Hashable
 import           Data.List
 import           Data.Maybe
 import           Data.Monoid
+import           Debug.Trace
 import           GHC.Generics
 
 import qualified Data.HashMap.Strict  as Map

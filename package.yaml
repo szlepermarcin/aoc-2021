@@ -18,6 +18,8 @@ dependencies:
 - unordered-containers
 - pqueue
 - hashable
+- mtl
+- array
 
 library:
   source-dirs: src
@@ -29,6 +31,6 @@ executables:
     ghc-options:
     - -threaded
     - -rtsopts
-    - -with-rtsopts=-N
+    - '"-with-rtsopts=-N -M4G"' 
     dependencies:
     - aoc2021
